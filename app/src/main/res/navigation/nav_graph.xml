@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- Fragmento de Login -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.koma.androidfirebase.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <!-- Acción para ir al fragmento de datos -->
+        <action
+            android:id="@+id/action_loginFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+    </fragment>
+
+    <!-- Fragmento de Datos -->
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.koma.androidfirebase.DataFragment"
+        android:label="Datos"
+        tools:layout="@layout/fragment_data">
+
+        <!-- Acción para volver al login (con limpieza del back stack) -->
+        <action
+            android:id="@+id/action_dataFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

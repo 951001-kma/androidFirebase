@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "950184848821",
+    "project_id": "androidfirebase-f10db",
+    "storage_bucket": "androidfirebase-f10db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950184848821:android:beb721a4363774aa1f3dfc",
+        "android_client_info": {
+          "package_name": "com.koma.androidfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtncrYLfRqQBh76eR9yrGC--Guax42yo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
